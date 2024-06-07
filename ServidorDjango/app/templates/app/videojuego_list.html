@@ -1,0 +1,15 @@
+{% extends "app/base.html" %}
+
+{% load static %}
+
+{% block title %}Lista de Videojuegos{% endblock %}
+
+{% block content %}
+    <h2>Videojuegos</h2>
+    <ul>
+        {% for videojuego in object_list %}
+            <li><a href="{% url 'videojuego_detail' videojuego.pk %}">{{ videojuego.titulo }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'videojuego_create' %}">Añadir Videojuego</a>
+{% endblock %}

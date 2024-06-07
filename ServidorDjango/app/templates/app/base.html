@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Servidor de Prueba Django{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Mi servidor {% endblock %}</h1>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; Mi servidor</p>
+    </footer>
+
+    <ul>
+        <li><a href="{% url 'creador_list' %}">Creadores</a></li>
+        <li><a href="{% url 'videojuego_list' %}">Videojuegos</a></li>
+    </ul>
+</body>
+</html>

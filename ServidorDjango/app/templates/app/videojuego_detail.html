@@ -1,0 +1,17 @@
+{% extends "app/base.html" %}
+
+{% load static %}
+
+{% block title %}Detalles del Videojuego{% endblock %}
+
+{% block content %}
+    <h2>{{ object.titulo }}</h2>
+    <p>Fecha de Lanzamiento: {{ object.fecha_lanzamiento }}</p>
+    <p>Creador: <a href="{% url 'creador_detail' object.creador.pk %}">{{ object.creador.nombre }}</a></p>
+    <a href="{% url 'videojuego_update' object.pk %}">Editar</a>
+    <form action="{% url 'videojuego_delete' object.pk %}" method="post" style="display:inline;">
+        {% csrf_token %}
+        <input type="submit" value="Eliminar">
+    </form>
+    <a href="{% url 'videojuego_list' %}">Volver a la lista</a>
+{% endblock %}

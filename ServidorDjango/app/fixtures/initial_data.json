@@ -1,0 +1,147 @@
+[
+    {
+        "model": "app.creador",
+        "pk": 1,
+        "fields": {
+            "nombre": "FromSoftware",
+            "fecha_nacimiento": "1986-11-01"
+        }
+    },
+    {
+        "model": "app.creador",
+        "pk": 2,
+        "fields": {
+            "nombre": "Capcom",
+            "fecha_nacimiento": "1979-05-30"
+        }
+    },
+    {
+        "model": "app.creador",
+        "pk": 3,
+        "fields": {
+            "nombre": "Square Enix",
+            "fecha_nacimiento": "1986-09-22"
+        }
+    },
+    {
+        "model": "app.creador",
+        "pk": 4,
+        "fields": {
+            "nombre": "Nintendo",
+            "fecha_nacimiento": "1889-09-23"
+        }
+    },
+    {
+        "model": "app.creador",
+        "pk": 5,
+        "fields": {
+            "nombre": "Bethesda Game Studios",
+            "fecha_nacimiento": "2001-10-01"
+        }
+    },
+    {
+        "model": "app.creador",
+        "pk": 6,
+        "fields": {
+            "nombre": "Electronic Arts",
+            "fecha_nacimiento": "1982-05-28"
+        }
+    },
+    {
+        "model": "app.creador",
+        "pk": 7,
+        "fields": {
+            "nombre": "Larian Studios",
+            "fecha_nacimiento": "1996-10-22"
+        }
+    },
+    {
+        "model": "app.creador",
+        "pk": 8,
+        "fields": {
+            "nombre": "Deep Silver",
+            "fecha_nacimiento": "2002-11-25"
+        }
+    },
+    {
+        "model": "app.videojuego",
+        "pk": 1,
+        "fields": {
+            "titulo": "Star Wars Jedi: Survivor",
+            "fecha_lanzamiento": "2023-04-28",
+            "creador": 6
+        }
+    },
+    {
+        "model": "app.videojuego",
+        "pk": 2,
+        "fields": {
+            "titulo": "Street Fighter 6",
+            "fecha_lanzamiento": "2023-06-02",
+            "creador": 2
+        }
+    },
+    {
+        "model": "app.videojuego",
+        "pk": 3,
+        "fields": {
+            "titulo": "Resident Evil 4 Remake",
+            "fecha_lanzamiento": "2023-03-24",
+            "creador": 2
+        }
+    },
+    {
+        "model": "app.videojuego",
+        "pk": 4,
+        "fields": {
+            "titulo": "Baldur's Gate 3",
+            "fecha_lanzamiento": "2023-08-03",
+            "creador": 7
+        }
+    },
+    {
+        "model": "app.videojuego",
+        "pk": 5,
+        "fields": {
+            "titulo": "Dead Island 2",
+            "fecha_lanzamiento": "2023-04-21",
+            "creador": 8
+        }
+    },
+    {
+        "model": "app.videojuego",
+        "pk": 6,
+        "fields": {
+            "titulo": "Final Fantasy 16",
+            "fecha_lanzamiento": "2023-06-22",
+            "creador": 3
+        }
+    },
+    {
+        "model": "app.videojuego",
+        "pk": 7,
+        "fields": {
+            "titulo": "Armored Core 6: Fires of Rubicon",
+            "fecha_lanzamiento": "2023-08-25",
+            "creador": 1
+        }
+    },
+    {
+        "model": "app.videojuego",
+        "pk": 8,
+        "fields": {
+            "titulo": "The Legend of Zelda: Tears of the Kingdom",
+            "fecha_lanzamiento": "2023-05-12",
+            "creador": 4
+        }
+    },
+    {
+        "model": "app.videojuego",
+        "pk": 9,
+        "fields": {
+            "titulo": "Starfield",
+            "fecha_lanzamiento": "2023-09-06",
+            "creador": 5
+        }
+    }
+]

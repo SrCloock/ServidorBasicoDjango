@@ -1,0 +1,22 @@
+{% extends "app/base.html" %}
+
+{% load static %}
+
+{% block title %}Detalles del Creador{% endblock %}
+
+{% block content %}
+    <h2>{{ object.nombre }}</h2>
+    <p>Fecha de Nacimiento: {{ object.fecha_nacimiento }}</p>
+    <h3>Videojuegos</h3>
+    <ul>
+        {% for videojuego in object.videojuegos.all %}
+            <li>{{ videojuego.titulo }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'creador_update' object.pk %}">Editar</a>
+    <form action="{% url 'creador_delete' object.pk %}" method="post" style="display:inline;">
+        {% csrf_token %}
+        <input type="submit" value="Eliminar">
+    </form>
+    <a href="{% url 'creador_list' %}">Volver a la lista</a>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "app/base.html" %}
+
+{% load static %}
+
+{% block title %}Lista de Creadores{% endblock %}
+
+{% block content %}
+    <h2>Creadores</h2>
+    <ul>
+        {% for creador in object_list %}
+            <li><a href="{% url 'creador_detail' creador.pk %}">{{ creador.nombre }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'creador_create' %}">Añadir Creador</a>
+{% endblock %}
